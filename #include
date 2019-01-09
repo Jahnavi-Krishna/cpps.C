@@ -83,3 +83,15 @@ Function strtok is used to break a string into a series of tokens. A token is a
 sequence of characters separated by delimiters (usually spaces or punctuation marks, but a
 delimiter can be any character). For example, in a line of text, each word can be considered
 a token, and the spaces and punctuation separating the words can be considered delimiters.
+
+
+(6)What is void?
+int main( void ) is a part of every C program. The parentheses after main indicate that main is a program
+building block called a function. C programs contain one or more functions, one of which
+must be main . Every program in C begins executing at the function main . Functions can
+return information. The keyword int to the left of main indicates that main “returns” an
+integer (whole-number) value.
+
+Functions also can receive information when they’re called upon to execute. The void in parentheses here
+means that main does not receive any information.
+pg 42

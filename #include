@@ -78,3 +78,8 @@ The preprocessor executes before a program is compiled.
 
 
 (5)WHAT IS A TOKEN?
+pg359
+Function strtok is used to break a string into a series of tokens. A token is a
+sequence of characters separated by delimiters (usually spaces or punctuation marks, but a
+delimiter can be any character). For example, in a line of text, each word can be considered
+a token, and the spaces and punctuation separating the words can be considered delimiters.

@@ -95,3 +95,24 @@ integer (whole-number) value.
 Functions also can receive information when they’re called upon to execute. The void in parentheses here
 means that main does not receive any information.
 pg 42
+
+
+(7)
+add.c:2:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘*’ token
+ int input(int a*,int b*)
+ 
+ 
+ it is (int *a,int *b);
+
+
+(8)add.c: In function ‘input’:
+add.c:5:8: error: expected expression before ‘%’ token
+  scanf(%d,a);
+        ^
+add.c:7:8: error: expected expression before ‘%’ token
+  scanf(%d,b);
+        ^
+"%d" should be written and not %d alone.
+
+(9)
+

@@ -1,2 +1,6 @@
 When # is not written   
 E492: Not an editor command: qw! 
+
+The compiler did not compile the code.
+so,maybe the compiler starts compiling after reading #
+

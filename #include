@@ -63,6 +63,11 @@ C has preprocessors...include,define etc are preprocessors
 
 What is a Preprocessor Directive?
 
+pg525
+The preprocessor executes before a program is compiled.
+• All preprocessor directives begin with # .
+• Only whitespace characters and comments may appear before a preprocessor directive on a line.
+
 
 
 

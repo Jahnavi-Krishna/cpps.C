@@ -1,0 +1,6 @@
+#include<stdio.h>
+Why is # used?
+#include is used to develop large programs
+Preprocessor directives begin with # and only whitespace characters 
+and comments may appear before a preprocessor directive on a line.
+

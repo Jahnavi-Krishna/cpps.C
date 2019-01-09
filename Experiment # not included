@@ -4,3 +4,19 @@ E492: Not an editor command: qw!
 The compiler did not compile the code.
 so,maybe the compiler starts compiling after reading #
 
+pg42
+
+#include <stdio.h>
+is a directive to the C preprocessor. Lines beginning with # are processed by the prepro-
+cessor before compilation. Line tells the preprocessor to include the contents of the stan-
+dard input/output header ( <stdio.h> ) in the program. This header contains information used by the compiler when compiling calls to standard input/output library functions such
+as printf .
+
+
+pg42
+Blank Lines and White Space
+if Line is simply a blank line. You use blank lines, space characters and tab characters (i.e.,
+“tabs”) to make programs easier to read. Together, these characters are known as white
+space. White-space characters are normally ignored by the compiler.
+
+Additional information that blank spaces are used to make the code look simple .But blank spaces are ignored by the compiler.

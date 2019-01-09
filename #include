@@ -147,4 +147,48 @@ int main()
 void main or void before a function indicates
 that function does not return any value
 
+(10)
+add.c: In function ‘add’:
+add.c:11:2: error: expected declaration specifiers before ‘c’
+  c=a+b;
+  ^
+add.c:12:2: error: expected declaration specifiers before ‘return’
+  return c;
+  ^
+add.c:13:1: error: expected declaration specifiers before ‘}’ token
+ }
+ ^
+add.c:15:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+add.c:19:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+add.c:9:5: error: old-style parameter declarations in prototyped function definition
+ int add(int a,int b)
+     ^
+add.c:24:1: error: expected ‘{’ at end of input
+ }
+ 
+ 
+ did not open a {
+ 
+ (11)Formal Parameter or Formal argument
+ pg 568
+ The formal type parameters are place-
+holders for fundamental types or user-defined types. These placeholders are used to specify
+the types of the function’s parameters (line 5), to specify the function’s return type and to
+declare variables within the body of the function definition (line 7). A function template
+is defined like any other function, but uses the formal type parameters as placeholders for
+actual data types.
+
+Formal parameters are the arguments declared within a function.
+
+ (12)Actual Parameter
+ 
+ 
+ (13)Pass by Value
+ (14)Pass by Reference
+
+
 

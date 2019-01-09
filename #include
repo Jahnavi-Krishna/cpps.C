@@ -3,7 +3,22 @@ Why is # used?
 #include is used to develop large programs
 Preprocessor directives begin with # and only whitespace characters 
 and comments may appear before a preprocessor directive on a line.
-pg 547
+pg 523
 
 The # operator causes a
 replacement text token to be converted to a string surrounded by quotes.
+
+macro definition:
+#define HELLO(x) puts( "Hello, " #x );
+When HELLO(John) appears in a program file, it’s expanded to
+puts( "Hello, " "John" );
+The string "John" replaces #x in the replacement text. Strings separated by white space are
+concatenated during preprocessing, so the preceding statement is equivalent to
+puts( "Hello, John" );
+The # operator must be used in a macro with arguments because the operand of # refers
+to an argument of the macro.
+The ## operator concatenates two tokens. Consider the following macro definition:
+#define TOKENCONCAT(x, y)
+x ## y
+When TOKENCONCAT appears in the program, its arguments are concatenated and used to
+replace the macro

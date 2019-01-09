@@ -22,3 +22,20 @@ The ## operator concatenates two tokens. Consider the following macro definition
 x ## y
 When TOKENCONCAT appears in the program, its arguments are concatenated and used to
 replace the macro
+___
+
+pg42
+#include
+Preprocessor Directive
+Line 3
+#include <stdio.h>
+is a directive to the C preprocessor. Lines beginning with # are processed by the prepro-
+cessor before compilation. Line 3 tells the preprocessor to include the contents of the stan-
+dard input/output header ( <stdio.h> ) in the program. This header contains information
+used by the compiler when compiling calls to standard input/output library functions such
+as printf (line 8). We explain the contents of headers in more detail in Chapter 5.
+
+Blank Lines and White Space
+Line 4 is simply a blank line. You use blank lines, space characters and tab characters (i.e.,
+“tabs”) to make programs easier to read. Together, these characters are known as white
+space. White-space characters are normally ignored by the compiler.

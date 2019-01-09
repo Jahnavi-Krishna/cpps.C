@@ -56,3 +56,15 @@ if Line is simply a blank line. You use blank lines, space characters and tab ch
 space. White-space characters are normally ignored by the compiler.
 
 Additional information that blank spaces are used to make the code look simple .But blank spaces are ignored by the compiler.
+
+
+(3)What is a preprocessor?
+C has preprocessors...include,define etc are preprocessors
+
+What is a Preprocessor Directive?
+
+
+
+
+
+(4)

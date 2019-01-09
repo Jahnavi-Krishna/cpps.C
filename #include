@@ -1,4 +1,4 @@
-#include<stdio.h>
+(1)#include<stdio.h>
 Why is # used?
 #include is used to develop large programs
 Preprocessor directives begin with # and only whitespace characters 
@@ -33,7 +33,7 @@ cessor before compilation. Line 3 tells the preprocessor to include the contents
 used by the compiler when compiling calls to standard input/output library functions such as printf.
 
 
-EXPERIMENT:# NOT WRITTEN
+(2)EXPERIMENT:# NOT WRITTEN
 When # is not written   
 E492: Not an editor command: qw! 
 

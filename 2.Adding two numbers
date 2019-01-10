@@ -7,8 +7,15 @@ declare variables within the body of the function definition (line 7). A functio
 is defined like any other function, but uses the formal type parameters as placeholders for
 actual data types.
    Formal parameters are the arguments declared within a function.
+      Arguments which are mentioned in the definition of the function is called formal arguments.
+     Formal arguments are very similar to local variables inside the function. Just like local variables, 
+ formal arguments are destroyed when the function ends.
 
  (2)Actual Parameter
+ Arguments which are mentioned in the function call is known as the actual argument.
+ Actual arguments can be constant, variables, expressions etc.
+the actual value that is passed into the method by a caller
+actual parameters are often called arguments.
  
  
  (3)Pass by Value

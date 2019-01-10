@@ -32,8 +32,7 @@ Why is # used?
 Preprocessor directives begin with # and only whitespace characters 
 and comments may appear before a preprocessor directive on a line.
 pg 523
-     The # operator causes a
-replacement text token to be converted to a string surrounded by quotes.
+     The # operator causes a replacement text token to be converted to a string surrounded by quotes.
      macro definition:
 #define HELLO(x) puts( "Hello, " #x );
 When HELLO(John) appears in a program file, it’s expanded to
@@ -71,8 +70,6 @@ dard input/output header ( <stdio.h> ) in the program. This header contains info
 as printf .
 
 
-
-
 (3)BLANK SPACES
 Experiment:What if blank spaces are not used?
 No difference in the output.
@@ -85,8 +82,6 @@ space. White-space characters are normally ignored by the compiler.
     Additional information that blank spaces are used to make the code look simple .But blank spaces are ignored by the compiler.
 
 
-
-
 (4)What is a preprocessor?
 C has preprocessors...include,define etc are preprocessors
 What is a Preprocessor Directive?
@@ -94,8 +89,6 @@ pg525
 The preprocessor executes before a program is compiled.
 • All preprocessor directives begin with # .
 • Only whitespace characters and comments may appear before a preprocessor directive on a line.
-
-
 
 
 
@@ -110,7 +103,6 @@ A programming token is the basic component of source code . Characters are categ
 describe their functions (constants, identifiers, operators, reserved words, and separators) in accordance with the rules of the 
 programming language.
   A token is the smallest element of a program that is meaningful to the compiler
-
 
 
 (6)What is void?
@@ -128,6 +120,7 @@ pg 42
 add.c:2:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘*’ token
  int input(int a*,int b*)
      It is (int *a,int *b);     the * symbol should be use dbefore the variale and not after the variable.
+     syntax error,small confusion.
 
 
 (8)add.c: In function ‘input’:
@@ -138,7 +131,7 @@ add.c:7:8: error: expected expression before ‘%’ token
   scanf(%d,b);
         ^
   "%d" should be written and not %d alone.
-
+  syntax error,forgot to add the " " 
 
 
 (9)

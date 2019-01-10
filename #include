@@ -106,7 +106,10 @@ sequence of characters separated by delimiters (usually spaces or punctuation ma
 delimiter can be any character). For example, in a line of text, each word can be considered
 a token, and the spaces and punctuation separating the words can be considered delimiters.
      Did not understand completely , but it might be a unit of the program.
-
+A programming token is the basic component of source code . Characters are categorized as one of five classes of tokens that 
+describe their functions (constants, identifiers, operators, reserved words, and separators) in accordance with the rules of the 
+programming language.
+  A token is the smallest element of a program that is meaningful to the compiler
 
 
 

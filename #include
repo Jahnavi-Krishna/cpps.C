@@ -129,8 +129,8 @@ int main()
 }
 
 
-void main or void before a function indicates
-that function does not return any value
+     void main or void before a function_____-indicatesthat function does not return any value.
+     int main(void) or int compute(void)_____-indicates that the function does not take any value.
 
 
 

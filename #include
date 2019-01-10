@@ -4,11 +4,9 @@ Why is # used?
 Preprocessor directives begin with # and only whitespace characters 
 and comments may appear before a preprocessor directive on a line.
 pg 523
-
-The # operator causes a
+     The # operator causes a
 replacement text token to be converted to a string surrounded by quotes.
-
-macro definition:
+     macro definition:
 #define HELLO(x) puts( "Hello, " #x );
 When HELLO(John) appears in a program file, it’s expanded to
 puts( "Hello, " "John" );
@@ -23,11 +21,8 @@ x ## y
 When TOKENCONCAT appears in the program, its arguments are concatenated and used to
 replace the macro
 ___function of #
-
-
 pg42
 #include Preprocessor Directive
-
 #include <stdio.h> is a directive to the C preprocessor. Lines beginning with # are processed by the prepro-
 cessor before compilation. Line 3 tells the preprocessor to include the contents of the standard input/output header ( <stdio.h> ) in the program. This header contains information
 used by the compiler when compiling calls to standard input/output library functions such as printf.
@@ -36,12 +31,9 @@ used by the compiler when compiling calls to standard input/output library funct
 (2)EXPERIMENT:# NOT WRITTEN
 When # is not written   
 E492: Not an editor command: qw! 
-
 The compiler did not compile the code.
 so,maybe the compiler starts compiling after reading #
-
 pg42
-
 #include <stdio.h>
 is a directive to the C preprocessor. Lines beginning with # are processed by the prepro-
 cessor before compilation. Line tells the preprocessor to include the contents of the stan-
@@ -50,30 +42,24 @@ as printf .
 
 
 (3)BLANK SPACES
-Experimenr:What if blank spaces are not used?
+Experiment:What if blank spaces are not used?
 No difference in the output.
 Maybe it didn't matter to the compiler.
-
 pg42
 Blank Lines and White Space
 if Line is simply a blank line. You use blank lines, space characters and tab characters (i.e.,
 “tabs”) to make programs easier to read. Together, these characters are known as white
 space. White-space characters are normally ignored by the compiler.
-
-Additional information that blank spaces are used to make the code look simple .But blank spaces are ignored by the compiler.
+    Additional information that blank spaces are used to make the code look simple .But blank spaces are ignored by the compiler.
 
 
 (4)What is a preprocessor?
 C has preprocessors...include,define etc are preprocessors
-
 What is a Preprocessor Directive?
-
 pg525
 The preprocessor executes before a program is compiled.
 • All preprocessor directives begin with # .
 • Only whitespace characters and comments may appear before a preprocessor directive on a line.
-
-
 
 
 
@@ -91,8 +77,7 @@ building block called a function. C programs contain one or more functions, one 
 must be main . Every program in C begins executing at the function main . Functions can
 return information. The keyword int to the left of main indicates that main “returns” an
 integer (whole-number) value.
-
-Functions also can receive information when they’re called upon to execute. The void in parentheses here
+  Functions also can receive information when they’re called upon to execute. The void in parentheses here
 means that main does not receive any information.
 pg 42
 
@@ -100,8 +85,6 @@ pg 42
 (7)
 add.c:2:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘*’ token
  int input(int a*,int b*)
- 
- 
  it is (int *a,int *b);
 
 
@@ -113,6 +96,8 @@ add.c:7:8: error: expected expression before ‘%’ token
   scanf(%d,b);
         ^
 "%d" should be written and not %d alone.
+
+
 
 (9)
 #include <stdio.h>
@@ -146,6 +131,8 @@ int main()
 
 void main or void before a function indicates
 that function does not return any value
+
+
 
 (10)
 add.c: In function ‘add’:

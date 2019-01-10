@@ -1,0 +1,16 @@
+(1)Formal Parameter or Formal argument
+ pg 568
+ The formal type parameters are place-
+holders for fundamental types or user-defined types. These placeholders are used to specify
+the types of the function’s parameters (line 5), to specify the function’s return type and to
+declare variables within the body of the function definition (line 7). A function template
+is defined like any other function, but uses the formal type parameters as placeholders for
+actual data types.
+
+Formal parameters are the arguments declared within a function.
+
+ (2)Actual Parameter
+ 
+ 
+ (3)Pass by Value
+ (4)Pass by Reference

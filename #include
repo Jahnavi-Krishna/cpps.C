@@ -1,3 +1,31 @@
+#include<stdio.h>
+
+int input(void)
+ {
+
+     int a;
+     printf("enter a number\n");
+     scanf("%d",&a);
+     return a;
+ }
+ int compute(int x)
+ {
+     x=x+1; 
+     return x;
+ }
+   void output (int m,int n)
+ {
+  printf("%d+1 is %d",m,n);
+ }
+  int main (void)
+ {
+  int a= input();
+  int b=cpmpute (a);
+  output(a,b);
+ }
+
+
+
 (1)#include<stdio.h>
 Why is # used?
 #include is used to develop large programs
@@ -28,6 +56,8 @@ cessor before compilation. Line 3 tells the preprocessor to include the contents
 used by the compiler when compiling calls to standard input/output library functions such as printf.
 
 
+
+
 (2)EXPERIMENT:# NOT WRITTEN
 When # is not written   
 E492: Not an editor command: qw! 
@@ -39,6 +69,8 @@ is a directive to the C preprocessor. Lines beginning with # are processed by th
 cessor before compilation. Line tells the preprocessor to include the contents of the stan-
 dard input/output header ( <stdio.h> ) in the program. This header contains information used by the compiler when compiling calls to standard input/output library functions such
 as printf .
+
+
 
 
 (3)BLANK SPACES
@@ -53,6 +85,8 @@ space. White-space characters are normally ignored by the compiler.
     Additional information that blank spaces are used to make the code look simple .But blank spaces are ignored by the compiler.
 
 
+
+
 (4)What is a preprocessor?
 C has preprocessors...include,define etc are preprocessors
 What is a Preprocessor Directive?
@@ -63,6 +97,8 @@ The preprocessor executes before a program is compiled.
 
 
 
+
+
 (5)WHAT IS A TOKEN?
 pg359
 Function strtok is used to break a string into a series of tokens. A token is a
@@ -70,6 +106,8 @@ sequence of characters separated by delimiters (usually spaces or punctuation ma
 delimiter can be any character). For example, in a line of text, each word can be considered
 a token, and the spaces and punctuation separating the words can be considered delimiters.
      Did not understand completely , but it might be a unit of the program.
+
+
 
 
 (6)What is void?
@@ -96,7 +134,7 @@ add.c:5:8: error: expected expression before ‘%’ token
 add.c:7:8: error: expected expression before ‘%’ token
   scanf(%d,b);
         ^
-"%d" should be written and not %d alone.
+  "%d" should be written and not %d alone.
 
 
 

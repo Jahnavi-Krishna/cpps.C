@@ -16,7 +16,34 @@ actual data types.
  Actual arguments can be constant, variables, expressions etc.
 the actual value that is passed into the method by a caller
 actual parameters are often called arguments.
- 
+
+#include<stdio.h>
+void input(int *a,int *b)
+{
+        printf("Enter a\n");
+        scanf("%d",a);
+        printf("Enter b\n");
+        scanf("%d",b);
+}
+int add(int a,int b)
+{
+        int c;
+        c=a+b;
+        return c;
+}
+ void output(int a,int b,int c)
+{
+        printf("%d + %d = %d",a,b,c);
+}
+
+int main()
+{
+        int x,y,z;
+        input(&x,&y);
+        z=add(x,y);
+        output(x,y,z);
+}
+
  
  (3)Pass by Value
    When arguments are passed by value, a copy of the argument’s value
@@ -24,6 +51,59 @@ is made and passed to the called function. Changes to the copy do not affect an 
 variable’s value in the caller.Pass-by-value should be used whenever the called function does not need to modify
 the value of the caller’s original variable.
 pg173
+
+#include<stdio.h>
+void input(int *a,int *b)
+{
+        printf("Enter a\n");
+        scanf("%d",a);
+        printf("Enter b\n");include<stdio.h>
+void input(int *a,int *b)
+{
+        printf("Enter a\n");
+        scanf("%d",a);
+        printf("Enter b\n");
+        scanf("%d",b);
+}
+int add(int a,int b)
+{
+        int c;
+        c=a+b;
+        return c;
+}
+ void output(int a,int b,int c)
+{
+        printf("%d + %d = %d",a,b,c);
+}
+
+int main()
+{
+        int x,y,z;
+        input(&x,&y);
+        z=add(x,y);
+        output(x,y,z);
+}
+
+        scanf("%d",b);
+}
+int add(int a,int b)
+{
+        int c;
+        c=a+b;
+        return c;
+}
+ void output(int a,int b,int c)
+{
+        printf("%d + %d = %d",a,b,c);
+}
+
+int main()
+{
+        int x,y,z;
+        input(&x,&y);
+        z=add(x,y);
+        output(x,y,z);
+}
 
 
  (4)Pass by Reference

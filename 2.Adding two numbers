@@ -6,8 +6,7 @@ the types of the function’s parameters (line 5), to specify the function’s r
 declare variables within the body of the function definition (line 7). A function template
 is defined like any other function, but uses the formal type parameters as placeholders for
 actual data types.
-
-Formal parameters are the arguments declared within a function.
+   Formal parameters are the arguments declared within a function.
 
  (2)Actual Parameter
  
@@ -42,3 +41,35 @@ int main()
         output(x,y,z);
 }
 
+(5)
+2.c: In function ‘main’:
+2.c:25:13: error: ‘x’ redeclared as different kind of symbol
+         int x=input();
+             ^
+2.c:23:14: note: previous definition of ‘x’ was here
+ int main(int x,int y,int z)
+              ^
+2.c:26:13: error: ‘y’ redeclared as different kind of symbol
+         int y=input();
+             ^
+2.c:23:20: note: previous definition of ‘y’ was here
+ int main(int x,int y,int z)
+                    ^
+2.c:27:13: error: ‘z’ redeclared as different kind of symbol
+         int z=add(int x,int y);
+             ^
+2.c:23:26: note: previous definition of ‘z’ was here
+ int main(int x,int y,int z)
+                          ^
+2.c:27:19: error: expected expression before ‘int’
+         int z=add(int x,int y);
+                   ^
+2.c:27:15: error: too few arguments to function ‘add’
+         int z=add(int x,int y);
+               ^
+2.c:12:5: note: declared here
+ int add(int a,int b)
+ ERRORS :
+(i)wrote int *a, instead of int*a
+(ii)input(&x,&y);
+(iii)z=add(x,y);

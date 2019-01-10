@@ -225,7 +225,7 @@ prg1.c:24:9: warning: format ‘%d’ expects argument of type ‘int’, but ar
 
 I used wrote function first to check if it works.But some erroes occured.
 but when I wrote main function in the end,it worked perfectly without any errors.
- 
+  But if the position of the main is changed, it is affecting the program and results in errors.
  
 
 

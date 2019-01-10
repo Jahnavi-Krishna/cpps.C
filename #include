@@ -69,6 +69,7 @@ Function strtok is used to break a string into a series of tokens. A token is a
 sequence of characters separated by delimiters (usually spaces or punctuation marks, but a
 delimiter can be any character). For example, in a line of text, each word can be considered
 a token, and the spaces and punctuation separating the words can be considered delimiters.
+     Did not understand completely , but it might be a unit of the program.
 
 
 (6)What is void?
@@ -85,7 +86,7 @@ pg 42
 (7)
 add.c:2:16: error: expected ‘;’, ‘,’ or ‘)’ before ‘*’ token
  int input(int a*,int b*)
- it is (int *a,int *b);
+     It is (int *a,int *b);     the * symbol should be use dbefore the variale and not after the variable.
 
 
 (8)add.c: In function ‘input’:
@@ -158,7 +159,34 @@ add.c:24:1: error: expected ‘{’ at end of input
  }
  
  
- did not open a {
+ did not open a {.
+ 
+ (11)
+prg1.c: In function ‘main’:
+prg1.c:5:8: warning: implicit declaration of function ‘input’ [-Wimplicit-function-declaration]
+  int a=input();
+        ^
+prg1.c:6:8: warning: implicit declaration of function ‘compute’ [-Wimplicit-function-declaration]
+  int b=compute(a);
+        ^
+prg1.c:7:2: warning: implicit declaration of function ‘output’ [-Wimplicit-function-declaration]
+  output(a,b);
+  ^
+prg1.c: At top level:
+prg1.c:21:6: warning: conflicting types for ‘output’
+ void output(int a,int b)
+      ^
+prg1.c:7:2: note: previous implicit declaration of ‘output’ was here
+  output(a,b);
+  ^
+prg1.c: In function ‘output’:
+prg1.c:24:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+  printf("%d + 1 is %d",&a,&b);
+         ^
+prg1.c:24:9: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘int *’ [-Wformat=]
+
+I used wrote function first to check if it works.But some erroes occured.
+but when I wrote main function in the end,it worked perfectly without any errors.
  
  
 

@@ -155,10 +155,6 @@ int main()
 
 
 
-
-
-
-
 (6)ERROR:
 compare.c: In function ‘compare’:
 compare.c:20:4: error: expected ‘;’ before ‘p’
@@ -222,3 +218,7 @@ shifted off the left are lost. In Fig. 10.13, variable number1 is assigned the v
 ( 00000000 00000000 00000011 11000000 ) in line 9. The result of left shifting variable
 number1 8 bits in the expression number1 << 8 (line 15) is 49152 ( 00000000 00000011
 11000000 00000000 ).
+
+
+
+(8)Debuging

@@ -47,7 +47,6 @@ void output(int m,int n,int p)
 int main()
 {
 }
-
 compare.c: In function ‘output’:
 compare.c:27:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
    printf("%d is greater among %d and %d",&p,&m,&n);
@@ -84,6 +83,8 @@ ___Declaration was not correct,and indentation of main function was wrong.
 
 
 
+
+
 (4)What is a Right shift operator(>>)? 
 I know it is not the same as > because '>' is greater than symbol used for comparing .
 where as '>>' is something called right shift operator.
@@ -94,6 +95,9 @@ of bits specified in its right operand. Performing a right shift on an unsigned 
 the vacated bits at the left to be replaced by 0 s; 1 s shifted off the right are lost. In
 Fig. 10.13, the result of right shifting number1 in the expression number1 >> 8 (line 21) is
 3 ( 00000000 00000000 00000000 00000011 ).
+
+
+
 
 
 (5)compare.c: In function ‘output’:
@@ -146,6 +150,10 @@ int main()
         z=compare(x,y);
         output(x,y,z);
 }
+
+
+
+
 
 
 

@@ -56,3 +56,4 @@ compare.c:27:10: warning: format ‘%d’ expects argument of type ‘int’, bu
 ____used *a,*b,maybe thats wrong
 The same error appeared 
 ___maybe I should ude if(p==00)
+Same error again

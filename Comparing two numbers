@@ -265,6 +265,9 @@ number1 8 bits in the expression number1 << 8 (line 15) is 49152 ( 00000000 0000
 
 
 (8)What is the difference between '&' and '&&'??
+        &=Bitwise AND assignment operator.
+ __used to assign ,eg a&b
+        &&=logical AND.
 
 
 (9)compare.c: In function ‘output’:
@@ -272,7 +275,7 @@ compare.c:22:52: error: ‘si’ undeclared (first use in this function)
   printf("%d is greater among %d , %d and %d",t,q,r,si);
   
   
-  mistakenly typed "si",instead of s
+  mistakenly typed "si",instead of s.
   typing error
   
 

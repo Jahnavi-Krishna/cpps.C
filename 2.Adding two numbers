@@ -182,5 +182,33 @@ the right code is z=add(x,y);and not int x and int y that has to be passed.
 
 
 (9)Local variable
+It might be a variable declared in a block of code or a separate function and used only within that,
+these variables can not be used outside the block.
+pg 593
+Variables declared in a function definition’s body are known as local variables and can be
+used only from the line of their declaration in the function to closing right brace ( } ) of the
+block in which they’re declared. A local variable must be declared before it can be used in
+a function. A local variable cannot be accessed outside the function in which it’s declared.
+When a function terminates, the values of its local variables are lost.
+
+
 (10)GLobal variable
-(11)%d
+it might be a variable definrd in the main function and can be accessed anywhere within the program.
+pg 183
+Global variables are created by placing variable declarations outside any function
+definition, and they retain their values throughout the execution of the program. Global
+variables and functions can be referenced by any function that follows their declarations or definitions in the file.
+pg563
+The unary scope resolution operator cannot be used to access a local vari-
+able of the same name in an outer block. A global variable can be accessed directly without
+the unary scope resolution operator if the name of the global variable is not the same as
+that of a local variable in scope
+
+(11)What is %d?And how does it work? 
+I think it is used to accept the input given by the user,i.e. to extract and obtain the value given by the user.
+pg.47
+The function reads from the standard input, which is usually the keyboard. This scanf has two arguments,
+"%d" and &integer1 . The first, the format control string, indicates the type of data that
+should be entered by the user. The %d conversion specifier indicates that the data should be
+an integer (the letter d stands for “decimal integer”). The % in this context is treated by scanf
+(and printf as we’ll see) as a special character that begins a conversion specifier.

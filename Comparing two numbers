@@ -306,6 +306,7 @@ compare.c:22:52: error: ‘si’ undeclared (first use in this function)
 
   
 (10)What is Debugging? How to Debug?
+  process: first clear all syntaax errors and if there are logical errors ,then we use debugging to find the logical errors.
   
   
   

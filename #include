@@ -28,6 +28,7 @@ int input(void)
 
 (1)#include<stdio.h>
 Why is # used?
+I think it is important because the program doesn't even get compiled without using #
 #include is used to develop large programs
 Preprocessor directives begin with # and only whitespace characters 
 and comments may appear before a preprocessor directive on a line.

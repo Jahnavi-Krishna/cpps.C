@@ -11,9 +11,14 @@ problrm:if your understanding of particulara set of concepts may be incomplete,t
 -values of the variables can be printed
 (thereis something called logging in large prgs to debug logical errors.)
 
-4.to debug,compile with the flag -g
+4.Single stepping
+
+to debug,compile with the flag -g
 gcc -g prgname.c
 
+
+->ddd =data display debugger.
+ddd ./a.out
 
 
 

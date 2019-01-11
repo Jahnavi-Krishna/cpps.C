@@ -53,4 +53,6 @@ compare.c:27:10: warning: format ‘%d’ expects argument of type ‘int’, bu
 compare.c:27:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘int *’ [-Wformat=]
 compare.c:27:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘int *’ [-Wformat=]
 
-used *a,*b,maybe thats wrong
+____used *a,*b,maybe thats wrong
+The same error appeared 
+___maybe I should ude if(p==00)

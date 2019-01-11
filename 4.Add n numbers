@@ -1,0 +1,11 @@
+(1)What is an array?
+Array names are simply pointers to where the arrays begin in memory, and, of course,
+two arrays will always be at different memory locations.
+When an array is passed to a general-purpose function designed to handle arrays of
+any size, the size of the array must be passed as an additional argument. Furthermore, one
+array cannot be assigned to another with the assignment operator(s)—array names are
+const pointers, so they cannot be used on the left side of an assignment operator.
+
+(2)How to declare an array?
+
+(3)gdb

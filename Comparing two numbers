@@ -267,7 +267,24 @@ number1 8 bits in the expression number1 << 8 (line 15) is 49152 ( 00000000 0000
 (8)What is the difference between '&' and '&&'??
         &=Bitwise AND assignment operator.
  __used to assign ,eg a&b
+ 
+ int main()
+{
+        int x,y,z;
+        input(&x,&y);
+        z=compare(x,y);
+        output(x,y,z);
+}       
+        
         &&=logical AND.
+   if(m>n&&m>o)
+                return m;
+        else if(n>m&&n>o)
+                return n;
+        else
+                return o;
+      
+        
 
 
 (9)compare.c: In function ‘output’:

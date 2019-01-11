@@ -277,10 +277,18 @@ compare.c:22:52: error: ‘si’ undeclared (first use in this function)
   
   mistakenly typed "si",instead of s.
   typing error
-  
+  void output(int q,int r,int s)
+{
+        if(s==00)
+                printf("Both are equal");
+
+        else
+                printf("%d is greater among %d and %d",s,r,q);
+
+}
 
   
-  (10)Debugging
+(10)What is Debugging? How to Debug?
   
   
   

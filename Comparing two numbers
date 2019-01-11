@@ -65,6 +65,89 @@ ____used *a,*b,maybe thats wrong
 The same error appeared 
 ___maybe I should ude if(p==00)
 Same error again
+declaration and the indentation was not right.
+
+(3)compare.c: In function ‘output’:
+compare.c:28:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+   printf("%d is greater among %d and %d",&q,&r,&s);
+          ^
+compare.c:28:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘int *’ [-Wformat=]
+compare.c:28:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘int *’ [-Wformat=]
+compare.c: In function ‘main’:
+compare.c:32:7: error: expected identifier or ‘(’ before ‘int’
+ int x,int y,int z;
+       ^
+compare.c:33:11: error: ‘y’ undeclared (first use in this function)
+ input(&x,&y);
+           ^
+compare.c:33:11: note: each undeclared identifier is reported only once for each function it appears in
+compare.c:34:1: error: ‘z’ undeclared (first use in this function)
+ z=compare(x,y);
+ ^
+___Declaration was not correct,and indentation of main function was wrong.
 
 
-(3)Right shift operator
+(4)Right shift operator
+
+(5)compare.c: In function ‘output’:
+compare.c:29:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+   printf("%d is greater among %d and %d",&q,&r,&s);
+          ^
+compare.c:29:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘int *’ [-Wformat=]
+compare.c:29:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘int *’ [-Wformat=]
+
+__syntax errors, variables were mismatched.
+
+(6)
+
+#include<stdio.h>
+int input(int*a,int*b)
+{
+        printf("Enter the first number\n");
+        scanf("%d",a);
+        printf("Enter thr second number\n");
+        scanf("%d",b);
+}
+int compare(int m,int n)
+{
+        int p;
+        if(m==n)
+                p=00;
+
+        else
+        {
+                if(m>n)
+                        p=m;
+
+                else(n>m)
+                        p=n;
+
+        }
+        return p;
+}
+void output(int q,int r,int s)
+{
+        if(s==00)
+                printf("Both are equal");
+
+        else
+                printf("%d is greater among %d and %d",s,r,q);
+
+}
+int main()
+{
+        int x,y,z;
+        input(&x,&y);
+        z=compare(x,y);
+        output(x,y,z);
+}
+ERROR:
+compare.c: In function ‘compare’:
+compare.c:20:4: error: expected ‘;’ before ‘p’
+    p=n;
+    ^
+    __used a condition for else,
+    either else if should be used to have a condition or else should be used .
+
+(7)
+

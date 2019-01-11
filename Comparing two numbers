@@ -1,23 +1,17 @@
 (1) WHat are the diffeerent ways to debug a logical error?
 
 1.Comparing with a existing program which works
-problem:it is a strategy to learn a prg nd not programming
-
+        problem:it is a strategy to learn a prg nd not programming
 2. Is mental tracing a good stategy?
-problrm:if your understanding of particulara set of concepts may be incomplete,thus u might trace wrong.
-
+        problrm:if your understanding of particulara set of concepts may be incomplete,thus u might trace wrong.
 3.putting printf where ever possible
--v can find the control flow (whether it is going to if part or else part,like if it goes to the if part,printing "if part" etc)
--values of the variables can be printed
-(thereis something called logging in large prgs to debug logical errors.)
-
+        -v can find the control flow (whether it is going to if part or else part,like if it goes to the if part,printing "if part" etc)
+        -values of the variables can be printed
+        (thereis something called logging in large prgs to debug logical errors.)
 4.Single stepping
-
-to debug,compile with the flag -g
-gcc -g prgname.c
-
-
-->ddd =data display debugger.
+        to debug,compile with the flag -g
+  gcc -g prgname.c
+  ->ddd =data display debugger.
 ddd ./a.out
 
 
@@ -90,12 +84,16 @@ ___Declaration was not correct,and indentation of main function was wrong.
 
 
 
-
-
-(4)Right shift operator
-
-
-
+(4)What is a Right shift operator(>>)? 
+I know it is not the same as > because '>' is greater than symbol used for comparing .
+where as '>>' is something called right shift operator.
+__I guess this operator shifts the value or memory location .
+pg425
+The right-shift operator ( >> ) shifts the bits of its left operand to the right by the number
+of bits specified in its right operand. Performing a right shift on an unsigned int causes
+the vacated bits at the left to be replaced by 0 s; 1 s shifted off the right are lost. In
+Fig. 10.13, the result of right shifting number1 in the expression number1 >> 8 (line 21) is
+3 ( 00000000 00000000 00000000 00000011 ).
 
 
 (5)compare.c: In function ‘output’:
@@ -202,5 +200,12 @@ int main()
         output(x,y,z);
 }
 
-(7)
+
+
+
+(7)What is a Left shift operator(<<)? 
+I know it is not the same as < because '<' is lesser than symbol used for comparing .
+where as '>>' is something called right shift operator.
+__I guess this operator shifts the value or memory location .
+pg425
 

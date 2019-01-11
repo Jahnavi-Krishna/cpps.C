@@ -221,10 +221,54 @@ number1 8 bits in the expression number1 << 8 (line 15) is 49152 ( 00000000 0000
 
 
 
-(8)Debuging
+
+(8)What is the difference between '&' and '&&'??
 
 
+(9)compare.c: In function ‘output’:
+compare.c:22:52: error: ‘si’ undeclared (first use in this function)
+  printf("%d is greater among %d , %d and %d",t,q,r,si);
+  
+  
+  mistakenly typed "si",instead of s
+  typing error
+  
+ Correcet Code:
+  #include<stdio.h>
+int input(int*a,int*b,int*c)
+{
+        printf("Enter the first number\n");
+        scanf("%d",a);
+        printf("Enter thr second number\n");
+        scanf("%d",b);
+        printf("Enter thr third number\n");
+        scanf("%d",c);
+}
+int compare(int m,int n,int o)
+{
+        if(m>n&&m>o)
+                return m;
+        else if(n>m&&n>o)
+                return n;
+        else
+                return o;
+}
+void output(int q,int r,int s,int t)
+{
+        printf("%d is greater among %d , %d and %d",t,q,r,s);
 
+}
+int main()
+{
+        int w,x,y,z;
+        input(&w,&x,&y);
+        z=compare(w,x,y);
+        output(w,x,y,z);
+}
 
-
-(9)What is the difference between '&' and '&&'??
+  
+  (10)Debugging
+  
+  
+  
+                                                 

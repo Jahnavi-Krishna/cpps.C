@@ -1,0 +1,31 @@
+ #include<stdio.h>
+int input(int*a,int*b,int*c)
+{
+        printf("Enter the first number\n");
+        scanf("%d",a);
+        printf("Enter thr second number\n");
+        scanf("%d",b);
+        printf("Enter thr third number\n");
+        scanf("%d",c);
+}
+int compare(int m,int n,int o)
+{
+        if(m<n&&m<o)
+                return m;
+        else if(n<m&&n<o)
+                return n;
+        else
+                return o;
+}
+void output(int q,int r,int s,int t)
+{
+        printf("%d is smallest among %d , %d and %d",t,q,r,s);
+
+}
+int main()
+{
+        int w,x,y,z;
+        input(&w,&x,&y);
+        z=compare(w,x,y);
+        output(w,x,y,z);
+}

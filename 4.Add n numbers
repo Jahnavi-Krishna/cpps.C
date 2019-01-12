@@ -137,4 +137,122 @@ conventional function calls to this point. It can take a great deal of practice 
 will appear natural. As an example of these concepts at work, let’s write a recursive program to perform a popular mathematical calculation.
 
 
-(7)
+(7)Using arrray
+#include<stdio.h>
+int main()
+{
+        int n,sum;
+        printf("How many numbers do you want to add?\n");
+        scanf("%d",&n);
+        int b[n]=input();
+        sum=compute();
+        output(sum);
+}
+
+
+
+int input()
+{
+        printf("Enter the values\n");
+        for(int i=0;i<n;i++)
+        {
+                scanf("%d",b[i]);
+        }
+        return b[n];
+}
+
+int compute()
+{
+        int s;
+        for(int i;i<n;i++)
+                s+=b[i];
+        return s;
+}
+
+
+
+int output(int sum)
+{
+        printf("The total sum is =%d",sum);
+}
+
+
+
+
+
+sum.c: In function ‘main’:
+sum.c:7:2: error: variable-sized object may not be initialized
+  int b[n]=input();
+  ^
+sum.c:7:11: warning: implicit declaration of function ‘input’ [-Wimplicit-function-declaration]
+  int b[n]=input();
+           ^
+sum.c:8:6: warning: implicit declaration of function ‘compute’ [-Wimplicit-function-declaration]
+  sum=compute();
+      ^
+sum.c:9:2: warning: implicit declaration of function ‘output’ [-Wimplicit-function-declaration]
+  output(sum);
+  ^
+sum.c: In function ‘input’:
+sum.c:17:16: error: ‘n’ undeclared (first use in this function)
+  for(int i=0;i<n;i++)
+                ^
+sum.c:17:16: note: each undeclared identifier is reported only once for each function it appears in
+sum.c:19:14: error: ‘b’ undeclared (first use in this function)
+   scanf("%d",b[i]);
+              ^
+sum.c: In function ‘compute’:
+sum.c:27:14: error: ‘n’ undeclared (first use in this function)
+  for(int i;i<n;i++)
+              ^
+sum.c:28:6: error: ‘b’ undeclared (first use in this function)
+   s+=b[i];
+      ^
+      
+      
+      
+ (8)sum.c: In function ‘main’:
+sum.c:7:9: error: variable-sized object may not be initialized
+         int b[n]=input();
+         ^
+sum.c:7:18: warning: implicit declaration of function ‘input’ [-Wimplicit-function-declaration]
+         int b[n]=input();
+                  ^
+sum.c:8:13: warning: implicit declaration of function ‘compute’ [-Wimplicit-function-declaration]
+         sum=compute();
+             ^
+sum.c:9:9: warning: implicit declaration of function ‘output’ [-Wimplicit-function-declaration]
+         output(sum);
+         ^
+sum.c: In function ‘input’:
+sum.c:17:23: error: ‘n’ undeclared (first use in this function)
+         for(int i=0;i<n;i++)
+                       ^
+sum.c:17:23: note: each undeclared identifier is reported only once for each function it appears in
+sum.c:19:28: error: ‘b’ undeclared (first use in this function)
+                 scanf("%d",b[i]);
+                            ^
+sum.c: In function ‘compute’:
+sum.c:27:21: error: ‘n’ undeclared (first use in this function)
+         for(int i;i<n;i++)
+                     ^
+sum.c:28:20: error: ‘b’ undeclared (first use in this function)
+                 s+=b[i];
+                    ^
+sum.c: At top level:
+sum.c:38:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘+=’ token
+  s+=b[i];
+   ^
+sum.c:39:2: error: expected identifier or ‘(’ before ‘return’
+  return s;
+  ^
+sum.c:40:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+sum.c:44:5: error: redefinition of ‘output’
+ int output(int sum)
+     ^
+sum.c:34:5: note: previous definition of ‘output’ was here
+ int output(int sum)
+     ^
+     

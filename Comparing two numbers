@@ -308,6 +308,14 @@ compare.c:22:52: error: ‘si’ undeclared (first use in this function)
 (10)What is Debugging? How to Debug?
   process: first clear all syntaax errors and if there are logical errors ,then we use debugging to find the logical errors.
   
+  Go to the terminal, enter gcc -g programname.c
+  then,proceed if there are no syntax errors,
+  now,enter ddd a.out
   
-  
-                                                 
+  nvidia@nvidia-OptiPlex-3050:~$ gcc -g 8.c
+nvidia@nvidia-OptiPlex-3050:~$ ddd a.out
+
+close the first window,
+select the break point from where you want to check the logical errors.
+now select Run button.snd execute the program.Now, the debugger displays the control flow,
+and processing .Now we can debug the logical errors.

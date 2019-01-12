@@ -1,4 +1,5 @@
 Day 3 [Comparing 2 numbers](11 Learning Episodes from Comparing 2 numbers + 3 Learning Episodes in Smallest of 3 numbers)
+{COMPARING 2 NUMBERS}
 #include<stdio.h>
 int input(int*a,int*b)
 {

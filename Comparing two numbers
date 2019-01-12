@@ -305,7 +305,19 @@ compare.c:22:52: error: ‘si’ undeclared (first use in this function)
 }
 
   
-(10)What is Debugging? 
+(10)What is Debugging?
+        Debugging is the process of finding and rectifying the logical errors which have occured in the code. 
+We resolve the syntax errors through compiling and other methods.
+gcc -g and ddd debuggers are used to debug logical errors and rectify them.
+
+Writing code is only the beginning of completing a programming project. After the original implementation is complete,
+it is time to test the program. Unfortunately, only the rare (and usually non-priority) code project is completed without a 
+single bug. Hence, debugging takes on great importance: the earlier you find an error, the less it will cost.
+A major bug found before distribution is much, much cheaper to fix than a major bug found by thousands of your users.
+
+A debugger allows you, the programmer, to interact and inspect the running program, making it possible to trace the flow of execution and track down the problems. Read on for tutorials on debuggers like GDB and Visual Studio,
+as well as more exotic and powerful tools like Valgrind. 
+__CProgramming.com
 (11)How to Debug?
   process: first clear all syntaax errors and if there are logical errors ,then we use debugging to find the logical errors.
   

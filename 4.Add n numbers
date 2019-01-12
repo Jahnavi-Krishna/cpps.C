@@ -1,3 +1,4 @@
+Day 4 [ Learning Episodes]{Sum of n numbers}
 (1)What is an array?
 Array names are simply pointers to where the arrays begin in memory, and, of course,
 two arrays will always be at different memory locations.

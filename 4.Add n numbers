@@ -1,4 +1,5 @@
 Day 4 [ Learning Episodes]{Sum of n numbers}
+
 (1)What is an array?
 Array names are simply pointers to where the arrays begin in memory, and, of course,
 two arrays will always be at different memory locations.
@@ -72,3 +73,46 @@ a variable that contains the value 7
 The pointer countPtr indirectly
 references a variable that
 contains the value 7
+
+(4)Adding n numbers without using array:
+
+#include<stdio.h>
+
+int main()
+{
+int val,sum=0,n;
+
+printf("Enter the number of entries you want to add\n");
+scanf("%d",&n);
+
+printf("Enter the values\n");
+
+for(int i=0;i<n;i++)
+{
+scanf("%d",&val);
+sum+=val;
+}
+printf("The total sum is =%d",sum);
+}
+
+
+sum.c: In function ‘main’:
+sum.c:10:1: error: stray ‘\’ in program
+ printf("Enter the values"\n);
+ ^
+sum.c:10:27: error: expected ‘)’ before ‘n’
+ printf("Enter the values"\n);
+                           ^
+sum.c:18:1: error: expected declaration or statement at end of input
+ }
+ ^
+ __\n should be declared before terminating the " ;
+ 
+ (5)
+ 
+ sum.c: In function ‘main’:
+sum.c:18:1: error: expected declaration or statement at end of input
+ }
+ ^
+
+ 

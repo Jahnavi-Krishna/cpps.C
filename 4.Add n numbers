@@ -9,3 +9,5 @@ const pointers, so they cannot be used on the left side of an assignment operato
 (2)How to declare an array?
 
 (3)gdb
+
+(4)What is a pointer

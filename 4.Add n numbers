@@ -114,5 +114,7 @@ sum.c:18:1: error: expected declaration or statement at end of input
 sum.c:18:1: error: expected declaration or statement at end of input
  }
  ^
-
+The last } was not terminated.Got confused with the terminating bracket of the loop.Typo error.
  
+ 
+ (6)

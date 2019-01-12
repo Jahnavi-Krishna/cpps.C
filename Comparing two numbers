@@ -1,3 +1,4 @@
+Day 3 (11 Learning Episodes here + 3 Learning Episodes in Smallest of 3 numbers)
 #include<stdio.h>
 int input(int*a,int*b)
 {

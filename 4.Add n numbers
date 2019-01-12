@@ -47,7 +47,7 @@ tains a specific value. A pointer, on the other hand, contains an address of a v
 contains a specific value. In this sense, a variable name directly references a value, and a
 pointer indirectly references a value (Fig. 7.1). Referencing a value through a pointer is
 called indirection.
-
+pg.278
 Declaring Pointers
 Pointers, like all variables, must be defined before they can be used. The definition specifies that variable countPtr is of type int * (i.e., a pointer to an integer) and is read
 (right to left), “ countPtr is a pointer to int ” or “ countPtr points to an object of type int .”
@@ -117,4 +117,24 @@ sum.c:18:1: error: expected declaration or statement at end of input
 The last } was not terminated.Got confused with the terminating bracket of the loop.Typo error.
  
  
- (6)
+ (6)What is Recursion?
+ A recursive function is a function that calls itself either directly or indirectly through another function.
+pg.188
+ A recursive function is called to solve a problem. The function actually knows how to solve only the simplest case(s), or so-called base case(s).
+If the function is called with a base case, the function simply returns a result. If the function is called with a more complex problem,
+the function divides the problem into two conceptual pieces: a piece that the function knows how to do and a piece that it does not know how to do.
+To make recursion feasible, the latter piece must resemble the original problem, but be a slightly simpler or smaller version.
+Because this new problem looks like the original problem, the function launches (calls) a fresh copy of itself to go to work on
+the smaller problem—this is referred to as a recursive call or the recursion step. The recursion step also includes the keyword return ,
+because its result will be combined with the portion of the problem the function knew how to solve to form a result that will be passed 
+back to the original caller.The recursion step executes while the original call to the function has not yet finished executing. 
+The recursion step can result in many more such recursive calls, as the function keeps dividing each problem it’s called with into two conceptual pieces.
+For the recursion to terminate, each time the function calls itself with a slightly simpler version of the original problem, 
+this sequence of smaller problems must eventually converge on the base case.When the function recognizes the base case,
+it returns a result to the previous copy of the function, and a sequence of returns ensues all the way up the line until the original call of
+the function eventually returns the final result to main . All of this sounds quite exotic compared to the kind of problem solving we’ve been using with 
+conventional function calls to this point. It can take a great deal of practice writing recursive programs before the process
+will appear natural. As an example of these concepts at work, let’s write a recursive program to perform a popular mathematical calculation.
+
+
+(7)

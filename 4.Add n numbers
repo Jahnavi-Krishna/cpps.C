@@ -40,3 +40,35 @@ an integer or an integer expression.
 
 
 (3)What is a pointer?
+
+Pointers are variables whose values are memory addresses. Normally, a variable directly con-
+tains a specific value. A pointer, on the other hand, contains an address of a variable that
+contains a specific value. In this sense, a variable name directly references a value, and a
+pointer indirectly references a value (Fig. 7.1). Referencing a value through a pointer is
+called indirection.
+
+Declaring Pointers
+Pointers, like all variables, must be defined before they can be used. The definition specifies that variable countPtr is of type int * (i.e., a pointer to an integer) and is read
+(right to left), “ countPtr is a pointer to int ” or “ countPtr points to an object of type int .”
+Also, the variable count is defined to be an int , not a pointer to an int . The * applies only to countPtr in the definition. 
+When * is used in this manner in a definition, it indicates that the variable being defined is a pointer. 
+Pointers can be defined to point to objects of any type. 
+To prevent the ambiguity of declaring pointer and non-pointer variables in the same declaration as shown above,
+you should always declare only one variable per declaration.
+
+int *countPtr, count;
+
+Note: Pointers and pointer-based entities such as arrays and strings, when misused intentionally or acciden-
+tally, can lead to errors and security breaches. See our Secure C Programming Resource Center
+( www.deitel.com/SecureC/ ) for articles, books, white papers and forums on this important topic.7.3 Pointer Operators
+279
+count
+7
+countPtr
+count
+7
+The name count directly references
+a variable that contains the value 7
+The pointer countPtr indirectly
+references a variable that
+contains the value 7

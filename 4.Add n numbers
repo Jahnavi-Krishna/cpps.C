@@ -148,9 +148,6 @@ int main()
         sum=compute();
         output(sum);
 }
-
-
-
 int input()
 {
         printf("Enter the values\n");
@@ -160,7 +157,6 @@ int input()
         }
         return b[n];
 }
-
 int compute()
 {
         int s;
@@ -168,9 +164,6 @@ int compute()
                 s+=b[i];
         return s;
 }
-
-
-
 int output(int sum)
 {
         printf("The total sum is =%d",sum);
@@ -255,4 +248,25 @@ sum.c:44:5: error: redefinition of ‘output’
 sum.c:34:5: note: previous definition of ‘output’ was here
  int output(int sum)
      ^
-     
+  
+  (9)What are data Structures?
+  
+  Structures are derived data types—they’re constructed using objects of other types.
+  
+  Consider the following structure definition:
+struct card {
+char *face;
+char *suit;
+}; // end struct card
+  
+  Keyword struct introduces a structure definition. The identifier card is the structure tag,
+which names the structure definition and is used with struct to declare variables of the
+structure type.
+
+Using Structures with Functions:
+Structures may be passed to functions by passing individual structure members, by passing
+an entire structure or by passing a pointer to a structure. When structures or individual
+structure members are passed to a function, they’re passed by value. Therefore, the mem-
+bers of a caller’s structure cannot be modified by the called function. To pass a structure
+by reference, pass the address of the structure variable. Arrays of structures—like all other
+arrays—are automatically passed by reference.

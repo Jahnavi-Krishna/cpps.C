@@ -29,3 +29,20 @@ int main()
         z=compare(w,x,y);
         output(w,x,y,z);
 }
+
+(1)compare.c: In function ‘output’:
+compare.c:22:52: error: ‘si’ undeclared (first use in this function)
+  printf("%d is greater among %d , %d and %d",t,q,r,si);
+  
+  
+  mistakenly typed "si",instead of s.
+  typing error
+  void output(int q,int r,int s)
+{
+        if(s==00)
+                printf("Both are equal");
+
+        else
+                printf("%d is greater among %d and %d",s,r,q);
+
+}

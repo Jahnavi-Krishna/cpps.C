@@ -306,7 +306,8 @@ compare.c:22:52: error: ‘si’ undeclared (first use in this function)
 }
 
   
-(10)What is Debugging?
+(10)What is Debugging? 
+GDB?
         Debugging is the process of finding and rectifying the logical errors which have occured in the code. 
 We resolve the syntax errors through compiling and other methods.
 gcc -g and ddd debuggers are used to debug logical errors and rectify them.

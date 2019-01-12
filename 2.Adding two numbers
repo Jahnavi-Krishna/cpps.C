@@ -1,4 +1,4 @@
-Day 2(11 Learning Episodes)
+Day 2(11 Learning Episodes)[Adding 2 numbers]
 #include<stdio.h>
 void input(int *a,int *b)
 {

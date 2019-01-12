@@ -1,4 +1,4 @@
-Day 1 (11 Learning Episodes)
+Day 1 (11 Learning Episodes)[Adding 1 to the given number]
 #include<stdio.h>
 
 int input(void)

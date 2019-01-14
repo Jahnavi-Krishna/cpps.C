@@ -1,5 +1,5 @@
  Day 3 Continued[Comparing 3 numbers](11 Learning Episodes from comparing 2 numbers + 3 Learning Episodes in Smallest of 3 numbers)
- {COMPARING 3 NUMBERS}
+ {COMPARING 3 NUMBERS}Ladder if
  #include<stdio.h>
 int input(int*a,int*b,int*c)
 {

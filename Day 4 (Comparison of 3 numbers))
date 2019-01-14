@@ -28,3 +28,10 @@ void output(int m,int n,int o,int p)
         printf("%d is the greatest of %d , %d , and %d ",p,m,n,o);
 }
 ~     
+com.c: In function ‘main’:
+com.c:40:12: warning: implicit declaration of function ‘ouput’ [-Wimplicit-function-declaration]
+            ouput(p,q,r,s);
+            ^
+/tmp/cctbReig.o: In function `main':
+com.c:(.text+0x152): undefined reference to `ouput'
+collect2: error: ld returned 1 exit status

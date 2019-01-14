@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+        int p,q,r,s;
+        input(&p,&q,&r);
+        s=compute(p,q,r);
+        ouput(p,q,r,s,);
+}
+
+int input(int*a,int*b,int*c)
+{
+        printf("Enter a");
+        scanf("%d",a);
+        printf("Enter b");
+        scanf("%d",b);
+        printf("Enter c");
+        scanf("%d",c);
+
+}
+
+int compute()
+{
+}
+
+void output(int m,int n,int o,int p)
+{
+        printf("%d is the greatest of %d , %d , and %d ",p,m,n,o);
+}
+~     

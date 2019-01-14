@@ -1,30 +1,42 @@
+Comparing 3 numbers
+(a)using Nested if
+
 #include<stdio.h>
-
-int main()
-{
-        int p,q,r,s;
-        input(&p,&q,&r);
-        s=compute(p,q,r);
-        ouput(p,q,r,s,);
-}
-
 int input(int*a,int*b,int*c)
 {
-        printf("Enter a");
+        printf("Enter the first number\n");
         scanf("%d",a);
-        printf("Enter b");
+        printf("Enter thr second number\n");
         scanf("%d",b);
-        printf("Enter c");
+        printf("Enter thr third number\n");
         scanf("%d",c);
-
 }
-
-int compute()
+int compare(int m,int n,int o)
 {
+        if(m<n)
+        {
+                if(m<o)
+                        return m;
+                else
+                        return o;
+        }
+        else if(n<m)
+        {
+                if(n<o)
+                        return n;
+                else
+                        return o;
+        }
 }
-
-void output(int m,int n,int o,int p)
+void output(int q,int r,int s,int t)
 {
-        printf("%d is the greatest of %d , %d , and %d ",p,m,n,o);
+        printf("%d is smallest among %d , %d and %d",t,q,r,s);
+
 }
-~     
+int main()
+{
+        int w,x,y,z;
+        input(&w,&x,&y);
+        z=compare(w,x,y);
+        output(w,x,y,z);
+}

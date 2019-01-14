@@ -74,3 +74,69 @@ int main()
         z=compare(w,x,y);
         output(w,x,y,z);
 }
+
+(c)Using Ternary Operator
+#include<stdio.h>
+int input(int*a,int*b,int*c)
+{
+        printf("Enter the first number\n");
+        scanf("%d",a);
+        printf("Enter thr second number\n");
+        scanf("%d",b);
+        printf("Enter thr third number\n");
+        scanf("%d",c);
+}
+int compare(int m,int n,int o)
+{
+        return ((m<n)?((m<o)?m:o):((n<o)?n:o)) ;
+}
+void output(int q,int r,int s,int t)
+{
+        printf("%d is smallest among %d , %d and %d",t,q,r,s);
+
+}
+int main()
+{
+        int w,x,y,z;
+        input(&w,&x,&y);
+        z=compare(w,x,y);
+        output(w,x,y,z);
+}
+
+
+(d)Using min variable
+
+ #include<stdio.h>
+int input(int*a,int*b,int*c)
+{
+        printf("Enter the first number\n");
+        scanf("%d",a);
+        printf("Enter thr second number\n");
+        scanf("%d",b);
+        printf("Enter thr third number\n");
+        scanf("%d",c);
+}
+int compare(int m,int n,int o)
+{
+        int min;
+        if(m<n&&m<o)
+                min=m;
+        else if(n<m&&n<o)
+                min=n;
+        else
+                min=o;
+        return min;
+}
+void output(int q,int r,int s,int t)
+{
+        printf("%d is smallest among %d , %d and %d",t,q,r,s);
+
+}
+int main()
+{
+        int w,x,y,z;
+        input(&w,&x,&y);
+        z=compare(w,x,y);
+        output(w,x,y,z);
+}
+

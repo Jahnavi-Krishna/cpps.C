@@ -118,12 +118,10 @@ int input(int*a,int*b,int*c)
 }
 int compare(int m,int n,int o)
 {
-        int min;
-        if(m<n&&m<o)
-                min=m;
-        else if(n<m&&n<o)
+        int min=m;
+        if(n<min)
                 min=n;
-        else
+        if(o<min)
                 min=o;
         return min;
 }
@@ -139,4 +137,4 @@ int main()
         z=compare(w,x,y);
         output(w,x,y,z);
 }
-
+~ 

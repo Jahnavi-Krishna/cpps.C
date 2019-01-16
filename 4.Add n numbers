@@ -275,30 +275,14 @@ arrays—are automatically passed by reference.
 (10)
 nvidia@nvidia-OptiPlex-3050:~$ gcc sum.c
 sum.c: In function ‘main’:
-sum.c:7:9: error: variable-sized object may not be initialized
-         int b[n]=input();
-         ^
-sum.c:7:18: warning: implicit declaration of function ‘input’ [-Wimplicit-function-declaration]
-         int b[n]=input();
-                  ^
-sum.c:8:13: warning: implicit declaration of function ‘compute’ [-Wimplicit-function-declaration]
-         sum=compute();
+sum.c:8:7: warning: implicit declaration of function ‘input’ [-Wimplicit-function-declaration]
+  b[n]=input(n);
+       ^
+sum.c:9:13: warning: implicit declaration of function ‘compute’ [-Wimplicit-function-declaration]
+         sum=compute(n,b[n]);
              ^
-sum.c:9:9: warning: implicit declaration of function ‘output’ [-Wimplicit-function-declaration]
+sum.c:10:9: warning: implicit declaration of function ‘output’ [-Wimplicit-function-declaration]
          output(sum);
          ^
-sum.c: In function ‘input’:
-sum.c:14:23: error: ‘n’ undeclared (first use in this function)
-         for(int i=0;i<n;i++)
-                       ^
-sum.c:14:23: note: each undeclared identifier is reported only once for each function it appears in
-sum.c:16:28: error: ‘b’ undeclared (first use in this function)
-                 scanf("%d",b[i]);
-                            ^
-sum.c: In function ‘compute’:
-sum.c:24:21: error: ‘n’ undeclared (first use in this function)
-         for(int i;i<n;i++)
-                     ^
-sum.c:25:20: error: ‘b’ undeclared (first use in this function)
-                 s+=b[i];
-                    ^
+
+What is implicit Declaration ??

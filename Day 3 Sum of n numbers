@@ -1,33 +1,31 @@
-#include<stdio.h>
-int main()
-{
-        int b;
-        b=input();
-        sum=compute(b);
-        output(sum);
-}
-int input()
-{
-        int num;
-        printf("How many numbers do you want to add?\n");
-        scanf("%d",&num);
-        int c[num];
-        printf("Enter the values\n");
-        for(int i=0;i<num;i++)
-        {
-                scanf("%d",&c[i]);
-        }
-        return c[num];
-}
-
-int compute(int c[num])
-{
-        int s;
-        for(int i=0;i<num;i++)
-                s+=c[i];
-        return s;
-}
-int output(int sum)
-{
-        printf("The total sum is =%d",sum);
-}
+  1 #include<stdio.h>
+  2 int input(int*n,int*c[n])
+  3 {
+  4         printf("How many numbers do you want to add?\n");
+  5         scanf("%d",n);
+  6         printf("Enter the values\n");
+  7         for(int i=0;i<n;i++)
+  8         {
+  9                 scanf("%d",&c[i]);
+ 10         }
+ 11         return c[n];
+ 12 }
+ 13 
+ 14 int compute(int c)
+ 15 {
+ 16         int s,num;
+ 17         for(int i=0;i<num;i++)
+ 18                 s+=c[i];
+ 19         return s;
+ 20 }
+ 21 int output(int sum)
+ 22 {
+ 23         printf("The total sum is =%d",sum);
+ 24 }
+ 25 int main()
+ 26 {
+ 27         int b,sum,num;
+ 28         input(&num,&b[num]);
+ 29         sum=compute(b[num]);
+ 30         output(sum);
+ 31}

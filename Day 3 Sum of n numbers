@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+        int b;
+        b=input();
+        sum=compute(b);
+        output(sum);
+}
+int input()
+{
+        int num;
+        printf("How many numbers do you want to add?\n");
+        scanf("%d",&num);
+        int c[num];
+        printf("Enter the values\n");
+        for(int i=0;i<num;i++)
+        {
+                scanf("%d",&c[i]);
+        }
+        return c[num];
+}
+
+int compute(int c[num])
+{
+        int s;
+        for(int i=0;i<num;i++)
+                s+=c[i];
+        return s;
+}
+int output(int sum)
+{
+        printf("The total sum is =%d",sum);
+}

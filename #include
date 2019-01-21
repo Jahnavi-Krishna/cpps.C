@@ -37,7 +37,7 @@ pg 523
      The # operator causes a replacement text token to be converted to a string surrounded by quotes.
      macro definition:
 #define HELLO(x) puts( "Hello, " #x );
-When HELLO(John) appears in a program file, it’s expanded to
+When HELLO(John) appears in a program file, it’s expanded to 
 puts( "Hello, " "John" );
 The string "John" replaces #x in the replacement text. Strings separated by white space are
 concatenated during preprocessing, so the preceding statement is equivalent to

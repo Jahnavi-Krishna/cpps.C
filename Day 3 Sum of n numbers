@@ -35,3 +35,31 @@ int main()
 	sum=compute(n,a[n]);
 	output(sum);
 }
+
+
+
+
+#include<stdio.h>
+int input()
+{
+        int n;
+        printf("How many numbers do you want to add?\n");
+        scanf("%d\n",&n);
+        return n;
+}
+int add(int n)
+{
+        int s=0,arr[n]
+        printf("Enter the values\n");
+        for(int i=0;i<n;i++)
+        {
+                scanf("%d",&arr[i]);
+        }
+}
+
+int main()
+{
+        int num,sum;
+        num=input();
+        sum=add(num);
+}

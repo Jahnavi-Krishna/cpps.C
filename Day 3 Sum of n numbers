@@ -93,3 +93,48 @@ double average (int size,int ary[size])
                 sum=sum+ary[i];
         }
         ave=(double)
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int input()
+{
+        int size;
+        printf("How many numbers do you want to add?");
+        scanf("%d",&size);
+        return size;
+}
+
+int sum(int size,int ary[size])
+{       int sum=0,sum;                          
+        for(int i=0;i<size;i++)
+        {
+                sum=sum+ary[i];                
+        }
+        return sum;
+}
+int output(int sum)
+{
+        printf("The sum is :%f",ave);
+        return 0;
+}
+int main(void)
+{
+        int size,sum;
+        size=input();
+       {
+               int ary[size];
+                for(int i=0;i<size;i++)
+                {
+                        printf("Enter number %2d :",i+1);                                                        
+                        scanf("%d",&ary[i]);
+                }
+                ave= average(size, ary);                                                          
+       }
+       return 0;
+       output(sum);

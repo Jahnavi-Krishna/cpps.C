@@ -1,106 +1,4 @@
-#include<stdio.h>
-int number()
-{
-	int num;
-	printf("How many numbers do you want to add?");
-	scanf("%d",&num);
-	return num;
-}
-int input(int nu)
-{
-	int b[nu];
-	printf("Enter the numbers\n");
-	for(int i=0;i<nu;i++)
-		scanf("%d",&b[i]);
-	return b[nu];
-
-}
-int compute(int numb,int c[numb])
-{
-	int s=0;
-	for(int i=0;i<numb;i++)
-		s=s+c[i];
-	return s;
-}
-void output(int s)
-{
-	printf("The total sum is =%d",s);
-}
-int main()
-{
-	int n,sum=0;
-	n=number();
-	int a[n];
-	a[n]=input(n);
-	sum=compute(n,a[n]);
-	output(sum);
-}
-
-
-
-
-#include<stdio.h>
-int input()
-{
-        int n;
-        printf("How many numbers do you want to add?\n");
-        scanf("%d\n",&n);
-        return n;
-}
-int add(int n)
-{
-        int s=0,arr[n]
-        printf("Enter the values\n");
-        for(int i=0;i<n;i++)
-        {
-                scanf("%d",&arr[i]);
-        }
-}
-
-int main()
-{
-        int num,sum;
-        num=input();
-        sum=add(num);
-}
-#include<stdio.h>
-double average(int size,int ary[*]);
-int main(void)
-{
-        int size;
-        double ave;
-        printf("How many numbers do you want to add?");
-        scanf("%d",&size);
-        {
-                int array[size];
-                for(int i=0;i<size;i++)
-                {
-                        printf("Enter number %2d :",i+1);
-                        scanf("%d",$ary[i]);
-                }
-                ave= average(size, ary);
-        }
-        printf("Average is :%f",ave);
-        return 0;
-}
-
-double average (int size,int ary[size])
-{
-        int sum=0;
-        double ave;
-        for(int i=0;i<size;i++)
-        {
-                sum=sum+ary[i];
-        }
-        ave=(double)
-
-
-
-
-
-
-
-
+//Sum of n numbers...pass array by Reference!!
 #include<stdio.h>
 int input()
 {
@@ -110,31 +8,31 @@ int input()
         return size;
 }
 
-int sum(int size,int ary[size])
-{       int sum=0,sum;                          
+int add(int size,int ary[size])
+{
+        int sum=0;
         for(int i=0;i<size;i++)
         {
-                sum=sum+ary[i];                
+                sum=sum+ary[i];
         }
+        printf("add sum is%d",sum);
         return sum;
 }
 int output(int sum)
 {
-        printf("The sum is :%f",ave);
-        return 0;
+        printf("The sum is :%d",sum);
 }
-int main(void)
+int main()
 {
         int size,sum;
         size=input();
-       {
-               int ary[size];
-                for(int i=0;i<size;i++)
-                {
-                        printf("Enter number %2d :",i+1);                                                        
-                        scanf("%d",&ary[i]);
-                }
-                ave= average(size, ary);                                                          
-       }
-       return 0;
-       output(sum);
+        int ary[size];
+        for(int i=0;i<size;i++)
+        {
+                printf("Enter number %2d :",i+1);
+                scanf("%d",&ary[i]);
+        }
+        sum=add(size,ary);
+        return 0;
+        output(sum);
+}

@@ -15,7 +15,6 @@ int add(int size,int ary[size])
         {
                 sum=sum+ary[i];
         }
-        printf("add sum is%d",sum);
         return sum;
 }
 int output(int sum)

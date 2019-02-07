@@ -1,37 +1,40 @@
 //Sum of n numbers...pass array by Reference!!
 #include<stdio.h>
-int input()
+int number()
 {
-        int size;
-        printf("How many numbers do you want to add?");
-        scanf("%d",&size);
-        return size;
+        int n;
+        printf("How many number of values do you want to add?\n");
+        scanf("%d",&n);
+        return n;
 }
-
-int add(int size,int ary[size])
+void input(int n,int ary[n])
 {
-        int sum=0;
-        for(int i=0;i<size;i++)
+        for(int i=0;i<n;i++)
         {
-                sum=sum+ary[i];
+        printf("Enter the number %d:\n",i+1);
+        scanf("%d",&ary[i]);
         }
-        return sum;
+        return ary;
 }
-int output(int sum)
+int sum(int n,int ary[n])
 {
-        printf("The sum is :%d",sum);
+        int s=0;
+        for(int i=0;i<n;i++)
+        {
+                s=s+ary[i];
+        }
+        return s;
+}
+void output(int su)
+{
+        printf("The sum is =%d",su);
 }
 int main()
 {
-        int size,sum;
-        size=input();
-        int ary[size];
-        for(int i=0;i<size;i++)
-        {
-                printf("Enter number %d :",i+1);
-                scanf("%d",&ary[i]);
-        }
-        sum=add(size,ary);
-        return 0;
-        output(sum);
+        int num,s=0;
+        num=number();
+        int ary[num];
+        input(num,&ary);
+        s=sum(num,ary);
+        output(s);
 }

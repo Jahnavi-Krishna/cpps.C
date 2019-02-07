@@ -14,7 +14,7 @@ void input(int n,int ary[n])
         printf("Enter the number %d:\n",i+1);
         scanf("%d",&ary[i]);
         }
-        return ary;
+        //return ary;
 }
 int sum(int n,int ary[n])
 {
@@ -34,7 +34,7 @@ int main()
         int num,s=0;
         num=number();
         int ary[num];
-        input(num,&ary);
+        input(num,ary);
         s=sum(num,ary);
         output(s);
 }

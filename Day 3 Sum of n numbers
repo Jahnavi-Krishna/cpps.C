@@ -14,7 +14,6 @@ void input(int n,int ary[n])
         printf("Enter the number %d:\n",i+1);
         scanf("%d",&ary[i]);
         }
-        //return ary;
 }
 int sum(int n,int ary[n])
 {

@@ -1,1 +1,25 @@
-
+#include<stdio.h>
+int input()
+{
+        int a;
+        printf("Enter a Number");
+        scanf("%d",&a);
+        return a;
+}
+int compute(int b)
+{
+        int s;
+        s=b+1;
+        return s;
+}
+void output(int g,int h)
+{
+        printf("%d +1 is:%d",g,h);
+}
+int main()
+{
+        int x,y;
+        x=input();
+        y=compute(x);
+        output(x,y);
+}

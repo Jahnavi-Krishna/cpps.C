@@ -4,7 +4,7 @@ struct fraction
         int num;
         int den;
 };
-void get_fraction( struct fraction )
+void get_fraction( struct fraction f)
 {
         printf("Enter the numerator");
         scanf("%d",&f->num);

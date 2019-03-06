@@ -1,24 +1,30 @@
 #include<stdio.h>
-struct fraction
+struct fract
 {
         int num;
         int den;
 };
-void get_fraction( struct fraction f)
+void input(struct fract *f)
 {
-        printf("Enter the numerator");
+        printf("Enter the numerator\n");
         scanf("%d",&f->num);
-        printf("Enter the denomirator");
+        printf("Enter the denominator\n");
         scanf("%d",&f->den);
 }
-void show_fraction( struct fraction f)
+void add(struct fract f1,struct fract f2,struct fract *fs)
 {
-        printf("%d%d\n",f.num,f.den);
+        fs->num=(f1.num*f2.den)+(f2.num*f1.den);
+        fs->den=f1.den*f2.den;
 }
-int main()
+void display(struct fract f)
 {
-        struct fraction f;
-        get_fraction(&f);
-        show_fraction(f);
-        return 0;
+        printf("The sum of the two fractions is :%d/%d\n",f.num,f.den);
+}
+void main()
+{
+        struct fract f1,f2,fs;
+        input(&f1);
+        input(&f2);
+        add(f1,f2,&fs);
+        display(fs);
 }

@@ -1,0 +1,21 @@
+#include<stdio.h>
+struct fraction
+{
+        int num;
+        int den;
+};
+int number()
+{
+        int n;
+        printf("How many Fractions do you want to add?");
+        scanf("%d");
+        return n;
+}
+void main()
+{
+        int n;
+        n=number();
+        int num[n];
+        int den[n];
+
+}

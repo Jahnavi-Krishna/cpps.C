@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+    int d,i,t,c,rev=0;
+    //Input
+    printf("Enter the total number of test cases \n");
+    scanf("%d",&t);
+    if(t<1 || t>1000)
+    {
+        printf("Error:The number of constraints should be between 1 to 1000");
+        exit(0);
+    }
+    int n[t];
+    printf("Enter the numbers \n");
+    for(i=0;i<t;i++)
+    {
+        scanf("%d",&n[i]);
+        if(t<1 || t>1000)
+        {
+            printf("Error:The number of constraints should be between 1 to 1000");
+            exit(0);
+        }
+    }
+    //Reversing the number
+    for(i=0;i<t;i++)
+    {
+        for(c=0;c<t;c++)
+        {
+            d=n[c]%10;      //Extracting the last digit of the number
+            rev=rev+d*10;   //Adding the last digit to sum
+            n[c]=n[c]/10;   //Deleting the last digit from number
+        }
+    }
+    //Output
+    printf("Output \n");
+    for(i=0;i<t;i++)
+    {
+        printf("%d\n",&n[i]);
+    }
+}
